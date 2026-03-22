@@ -6,6 +6,9 @@ return {
     config = function()
       require("oasis").setup()
       vim.cmd.colorscheme("oasis-abyss")
+
+      vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE" })
+      vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
     end
   }
 }
